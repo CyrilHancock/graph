@@ -53,7 +53,7 @@ function PieMap({ dataScheduleTimeOccur }) {
             onClick(e,element){
           
               let data_set_item_date = items.filter(
-                (d) => d.schedule_time.substring(0, 10) == Array.from(dataScheduleTimeOccur.keys()).at(element[0].index)
+                (d) => d.schedule_time.substring(0, 10) == Array.from(dataScheduleTimeOccur.keys()).at(element[0]?.index)
               )
               setScheduleSlot(data_set_item_date)
             },
